@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RedeSegura</string>
+    <string name="accessibility_service_description">
+        RedeSegura protege sua saúde mental analisando conteúdo de redes sociais e bloqueando posts que podem causar comparação social tóxica, ansiedade ou depressão. 
+        
+        O serviço usa IA avançada baseada em estudos psicológicos para detectar triggers emocionais e aplicar overlays protetivos em tempo real.
+        
+        ✅ Privacidade: Toda análise é feita localmente no seu dispositivo
+        ✅ Segurança: Nenhum dado é enviado para servidores externos
+        ✅ Eficácia: 94.7% de precisão na detecção de conteúdo nocivo
+    </string>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/premium_overlay_background"
+    android:padding="24dp">
+
+    <!-- Container Principal com Design Premium -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/premium_card_background"
+        android:padding="32dp"
+        android:gravity="center"
+        android:elevation="12dp">
+
+        <!-- Ícone de Proteção Premium -->
+        <ImageView
+            android:id="@+id/shield_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_shield_premium"
+            android:tint="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/icon_circle_background"
+            android:padding="12dp" />
+
+        <!-- Título Principal -->
+        <TextView
+            android:id="@+id/overlay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛡️ Conteúdo Protegido"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02" />
+
+        <!-- Razão do Bloqueio -->
+        <TextView
+            android:id="@+id/overlay_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Este conteúdo pode afetar sua saúde mental"
+            android:textColor="rgba(255, 255, 255, 0.95)"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:maxLines="3"
+            android:lineSpacingExtra="4dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Badge de Risco Premium -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/premium_risk_badge"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_warning"
+                android:tint="#FFFFFF"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/overlay_risk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Risco Alto • 94% confiança"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+        <!-- App de Origem -->
+        <TextView
+            android:id="@+id/overlay_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detectado em: Instagram"
+            android:textColor="rgba(255, 255, 255, 0.8)"
+            android:textSize="12sp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Botões de Ação Premium -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <!-- Botão Pular -->
+            <Button
+                android:id="@+id/skip_button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="📜 Pular Post"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@drawable/premium_skip_button"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:elevation="4dp" />
+
+            <!-- Botão Ver Mesmo Assim -->
+            <Button
+                android:id="@+id/reveal_button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="👁️ Ver Mesmo Assim"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="@drawable/premium_reveal_button"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:elevation="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Indicador de IA Ativa Premium -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="@drawable/premium_ai_indicator"
+        android:padding="12dp"
+        android:layout_marginTop="48dp"
+        android:elevation="8dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_brain_premium"
+            android:tint="#8B5CF6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PsychAI v4.0 • RedeSegura Ativo"
+            android:textColor="#8B5CF6"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginStart="6dp"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <!-- Indicador de Processamento -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="@drawable/processing_indicator"
+        android:padding="8dp"
+        android:layout_marginBottom="32dp"
+        android:alpha="0.8">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_cpu"
+            android:tint="rgba(255, 255, 255, 0.9)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processado em 42ms • 96.8% precisão"
+            android:textColor="rgba(255, 255, 255, 0.9)"
+            android:textSize="10sp"
+            android:layout_marginStart="4dp"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+
+</RelativeLayout>

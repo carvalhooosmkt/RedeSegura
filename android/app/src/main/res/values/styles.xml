@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Tema Principal do RedeSegura -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#8B5CF6</item>
+        <item name="colorPrimaryDark">#7C3AED</item>
+        <item name="colorAccent">#10B981</item>
+        <item name="android:windowBackground">@color/background_primary</item>
+        <item name="android:statusBarColor">#8B5CF6</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <!-- Tema de Launch -->
+    <style name="LaunchTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!-- Estilos para Overlays Premium -->
+    <style name="PremiumOverlayTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/OverlayAnimation</item>
+    </style>
+
+    <!-- Animações para Overlays -->
+    <style name="OverlayAnimation">
+        <item name="android:windowEnterAnimation">@anim/overlay_enter</item>
+        <item name="android:windowExitAnimation">@anim/overlay_exit</item>
+    </style>
+
+    <!-- Estilos de Texto Premium -->
+    <style name="PremiumTitleText">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="PremiumBodyText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">rgba(255, 255, 255, 0.95)</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <style name="PremiumCaptionText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Estilos de Botão Premium -->
+    <style name="PremiumButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:stateListAnimator">@animator/button_state_animator</item>
+    </style>
+
+</resources>

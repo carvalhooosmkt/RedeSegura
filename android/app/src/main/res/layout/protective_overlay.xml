@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/overlay_background"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Ícone de Proteção -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_shield"
+            android:tint="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/overlay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛡️ Conteúdo Protegido"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:gravity="center" />
+
+        <!-- Razão do Bloqueio -->
+        <TextView
+            android:id="@+id/overlay_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Este conteúdo pode afetar sua saúde mental"
+            android:textColor="rgba(255, 255, 255, 0.9)"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:maxLines="2" />
+
+        <!-- Badge de Risco -->
+        <TextView
+            android:id="@+id/overlay_risk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Risco Alto • 94% confiança"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@drawable/risk_badge_background"
+            android:padding="8dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Botão Ver Mesmo Assim -->
+        <Button
+            android:id="@+id/reveal_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👁️ Ver Mesmo Assim"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@drawable/reveal_button_background"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp" />
+
+    </LinearLayout>
+
+    <!-- Indicador de IA Ativa -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="@drawable/ai_indicator_background"
+        android:padding="8dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_brain"
+            android:tint="#8B5CF6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IA RedeSegura Ativa"
+            android:textColor="#8B5CF6"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
