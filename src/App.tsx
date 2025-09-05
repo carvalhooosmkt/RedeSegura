@@ -13,7 +13,7 @@ import {
   Platform,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { BlurView } from '@react-native-blur/blur';
+import { BlurView } from '@react-native-community/blur';
 import HapticFeedback from 'react-native-haptic-feedback';
 import { useRedeSeguraProtection } from './hooks/useRedeSeguraProtection';
 import { PermissionsManager } from './utils/PermissionsManager';
